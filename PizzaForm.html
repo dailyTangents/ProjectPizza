@@ -1,0 +1,97 @@
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Order Pizza</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+/*
+This javascript form validation only for generel users.
+the spam bots don't process this type javascript validation so we have to
+validate again on server side.
+*/
+function validate_form(){
+
+var errors='';
+
+var fm=document.contactform;
+
+if(fm.jflsjls_email.value==''){
+errors+='Email required.\n';
+}
+
+if( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(fm.jflsjls_email.value))){
+errors+='Invalid email address.\n';
+}
+
+if(fm.comments_sfs==''){
+errors+='Empty comments.\n';
+}
+
+if(errors!=""){
+alert(errors);
+return false;
+}
+return true;
+}
+</script>
+<form action="OrderPizza.php" method="post" name="contactform" id="contactform" onsubmit="return validate_form();">
+  <table width="500" border="1">
+    <tr>
+      <th colspan="2">Contact Me
+        <script>
+		//email obfuscation
+document.write("m"+"y"+"m"+"a"+"i"+"l"+" &#64;"+"y"+"o"+"u"+"d"+"o"+"m"+"a"+"i"+"n"+" &#46"+"c"+"o"+"m");
+</script>      </th>
+    </tr>
+    <tr>
+      <td width="295"> Name </td>
+      <td width="288"><input name="sfsf_name" type="text" id="sfsf_name" />      </td>
+    </tr>
+    <tr>
+      <td>Email: * </td>
+      <td><input name="jflsjls_email" type="text" id="jflsjls_email" /></td>
+    </tr>
+    <tr>
+      <td> Web Site </td>
+      <td><input name="kipmp_website" type="text" id="kipmp_website" value="" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+	  <!--
+	  hidden field that real user can't see ,only spam bots can process
+	  in some spam bots this hidden field don't change the value ,
+	  they submit as it is
+	   -->
+	  <input name="owjrj_ran" type="hidden" id="owjrj_ran" />
+	  <!--
+	  to overcome we use text field that is hidden from real user.
+	  but this field is precessed by spam bots.
+	  it is simply .
+	   -->
+        <input name="mpmpm_rwrw" type="text" id="mpmpm_rwrw" style="display:none" value="" />
+        Comments*</td>
+    </tr>
+    <tr>
+      <td colspan="2"><textarea name="comments_sfs" cols="45" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+	  <!--
+	  recaptcha text area field
+	  this is another guarented check.
+	  but it is not user freindly
+	   -->
+	  <?php echo recaptcha_get_html($publickey, $errors);?></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" name="Submit" value="Submit" />
+        <input type="reset" name="Submit2" value="Reset" />
+        <small>* Required field </small></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
