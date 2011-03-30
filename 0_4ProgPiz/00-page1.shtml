@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ePizza</title>
+
+<!-- =============================== -->
+<!--     #include file="00-header.htm"-->
+<h1> this is the header </h1>
+<!-- =============================== -->
+<link rel="stylesheet" type="text/css" media="print" href="helpers/4toggle/toggleprint.css" />
+<link rel="stylesheet" type="text/css"  href="helpers/4toggle/toggle.css" />
+<script type="text/javascript" src="helpers/4toggle/jquery-latest.js"></script>
+<script type="text/javascript" src="helpers/4toggle/toggle.js"></script>
+<script type="text/javascript" src="library/js/jquery.js"></script>
+<script type="text/javascript" src="library/js/jquery.validate.js"></script>
+
+<script type="text/javascript">
+<!--
+//  form validation
+  $(document).ready(function(){
+    $("#myForm1").validate();
+  });
+// -->
+</script>
+<style type="text/css">
+<!--
+body {
+	font-family: Arial; Verdana, Geneva, sans-serif;
+	font-size:14;
+     }
+	label.error {
+		float: none;
+		color: red;
+		padding-left: .5em;
+		padding-right: .5em;
+		vertical-align: top;
+	}
+//-->
+</style>
+
+
+</head>
+
+<body class="layout2 " id="topofpage" background="helpers/background2.jpg">
+
+<!-- =============================== -->
+<!-- =============================== -->
+
+<div id="cPage">
+
+<!-- =============================== -->
+<!-- =============================== -->
+
+<div class="cMainNav">
+<div class="cMainNavFix">
+
+<!-- =============================== -->
+<!-- =============================== -->
+
+<!-- ============================================================================================= -->
+<!-- =================== -->				
+<div id="col2"><div class="stylemain">
+<!-- InstanceBeginEditable name="col2" -->
+<h1>ePizza</h1>
+<h2></h2>
+<p></p>
+
+
+
+<div class="container">
+
+	<h2 class="trigger"><font color="#eeeeee">Pizza</font></h2>
+	<div class="toggle_container">
+		<div class="block">
+
+<p><a href=""></a><big><strong>How many pizza's would you like?</strong></big></p>
+<!-- ================================================================ -->
+<p>  All pizzas are 10" thick crust and include 2 toppings.
+ <font color="#008400"><strong>$10</strong></font> </p>
+			 
+<!-- ================================================================ -->
+		</div>
+	</div>
+	
+	<h2 class="trigger"><font color="#eeeeee">Pizza Toppings</font></h2>
+
+	<div class="toggle_container">
+		<div class="block">
+			<p><big><strong>Select your toppings</strong></big></p>
+
+<!-- ================================================================ -->
+radio button choice list here
+<!-- ================================================================ -->
+
+		</div>
+
+	</div>
+
+	<h2 class="trigger"><font color="#eeeeee">Drinks &amp; Sides</font></h2>
+
+	<div class="toggle_container">
+		<div class="block">
+	
+			<p><big><strong>Drinks &amp; Sides</strong></big></p>
+
+<!-- ================================================================ -->
+<p> 
+ Drinks, salad, breadsticks</p>
+<!-- ================================================================ -->
+
+		</div>
+
+	</div>
+
+
+	<h2 class="trigger"><font color="#eeeeee">Pick-Up or Delivery?</font></h2>
+
+	<div class="toggle_container">
+		<div class="block">
+			<p><big><strong>Pick-Up or Delivery</strong></big></p>
+
+<!-- ================================================================ -->
+
+<p>First Name, Last Name, Delivery Address, Billing Address, Email, Payment Method (check, cash, credit card), 
+ email coupon sign-up, CAPTCHA
+ </p>
+<br /><form action="image-03.php" method="post"  id="myForm1" >
+    <div>
+     First Name&nbsp;: <input name="pizzafname" type="text" class="required"  /><br />
+     Last Name&nbsp;: <input name="pizzalname" type="text" class="required"  /><br />
+     Delivery Address&nbsp;: <input name="pizzadeladd" type="text" class="required"  /><br />
+     Billing Address&nbsp;: <input name="pizzabilladd" type="text" class="required"  /><br />
+     Payment Method&nbsp;: <br />
+   
+
+
+
+     Email: <input name="pizzaemail" type="text"  class="required email"  /><br />
+
+       <input type="submit" value="Register" />
+    </div>
+</form>
+
+<!-- ================================================================ -->
+
+		</div>
+
+	</div>
+
+	<h2 class="trigger"><font color="#eeeeee">Verify Order</font></h2>
+
+	<div class="toggle_container">
+		<div class="block">
+		
+			<p><big><strong>Verify Order</strong></big></p>
+
+<!-- ================================================================ -->
+
+<!-- ============================================================================================= -->
+<p> Total Amount Due: Billed To: eSignature; Captcha, Send
+</p>
+<!-- ================================================================ -->
+
+		</div>
+
+	</div>
+
+
+
+
+<!-- ==================================================================== -->
+<!-- ==================================================================== -->
+
+</div>
+<!-- ==================================================================== -->
+<!-- ==================================================================== -->
+<br />&nbsp;<br />&nbsp; <br />
+
+				  <!-- InstanceEndEditable -->
+         				  
+			  </div> </div>
+<!-- =================== -->
+<!-- ============================================================================================= -->
+
+<div class="spacer">&nbsp;</div><!-- end spacer -->
+</div><!-- end cMainNavFix -->
+</div><!-- end cMainNav -->
+</div><!-- end id=cPage -->
+
+<!-- =============================== -->
+<!--     #include file="00_foot.htm"-->
+<!-- =============================== -->
+
+</body>
+<!-- InstanceEnd --></html>
+<!-- =============================== -->
+
