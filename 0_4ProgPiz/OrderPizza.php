@@ -9,7 +9,7 @@ return eregi($eregpat,$email );
 function is_valid_comments($data){
 return ($data=="");
 }
-#function that clean the user data againest 
+#function that cleans the user data against 
 #email header injection so we clean it
 function safe_mail($data){
 #clean non standerd alpha numeric and some special symbels

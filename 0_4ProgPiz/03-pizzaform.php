@@ -1,8 +1,5 @@
 <?php
-
-
 session_start();  // Start the session where the code will be stored.
-
 ?>
 
 
@@ -15,7 +12,7 @@ session_start();  // Start the session where the code will be stored.
 <title>ePizza</title>
 
 <!-- =============================== -->
-<!--     #include file="00-header.htm"-->
+<!--     #include file="03-head.php"-->
 <!-- =============================== -->
 <link rel="stylesheet" type="text/css" media="print" href="helpers/4toggle/toggleprint.css" />
 <link rel="stylesheet" type="text/css"  href="helpers/4toggle/toggle.css" />
@@ -56,20 +53,6 @@ body {
 <body class="layout2 " id="topofpage"  background="helpers/swatch05.jpg" >
 <br /><center><img src="logo.jpg" width="550"></center>
 
-<?php 
-// session_start();
-
-if( isset($_POST['submit'])) {
-   if( $_SESSION['security_code'] == $_POST['security_code'] && !empty($_SESSION['security_code'] ) ) {
-		// Insert your code for processing the form here, e.g emailing the submission, entering it into a database. 
-		echo 'Thank you. Your message said i can add all kind of stuff here coming from form "'.$_POST['message'].'"';
-		unset($_SESSION['security_code']); exit; 
-   } else {
-		// Insert your code for showing an error message here
-		echo 'Sorry, you have provided an invalid security code'; exit; 
-   }
-} else {
-?>
 <center>
 	<form action="0_form.php" method="post"  id="myForm1" >
 
@@ -124,9 +107,6 @@ if( isset($_POST['submit'])) {
 
 </div>	</form>
 </center>
-<?php
-	}
-?>
 
 
 

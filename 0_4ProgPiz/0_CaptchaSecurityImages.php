@@ -31,7 +31,7 @@ class CaptchaSecurityImages {
 
 	function generateCode($characters) {
 		/* list all possible characters, similar looking characters and vowels have been removed */
-		$possible = '23456789bdfghjkmnprstvwxyz';
+		$possible = '23456789bdfghkmnprstvwxyz';
 		$code = '';
 		$i = 0;
 		while ($i < $characters) { 
